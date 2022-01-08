@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/loginstyle.css">
+	
+</head>
+<body >
+	<div class="container" id="container">
+		<div class="form-container sign-up-container" dir="rtl">
+			<form>
+				<h1>ایجاد حساب کاربری</h1>
+				<input type="text" placeholder="نام" required/>
+				<input type="email" placeholder="ایمیل" required/>
+				<input type="tel" placeholder="شماره تلفن" required/>
+				<input type="password" placeholder="رمز عبور" required/>
+                <textarea placeholder="آدرس" style="resize: none;" required></textarea>
+                <a href="index.html" class="a1" >ثبت نام</a>
+			</form>
+		</div>
+		<div class="form-container sign-in-container" dir="rtl">
+			<form>
+				<h1>ورود</h1>
+				
+				<input id="mail" type="email" placeholder="ایمیل"  />
+				<input type="password" placeholder="رمز عبور" >
+				<a href="forgetpassword.html">فراموشی رمز عبور</a>
+                <a href="index.html" class="a1">ورود</a>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>به موج کتاب خوشامدید </h1>
+					<p>برای ورود بر روی دکمه زیر کلیک کنید</p>
+					<button class="ghost" id="signIn">ورود</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>سلام </h1>
+					<p>برای ایجاد حساب کاربری بر روی دکمه ثبت نام کلیک کنید</p>
+					<button class="ghost" id="signUp">ثبت نام</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="js/login.js"></script>
+    <script>
+        function myFunction() {
+           window.open("index.html","_self")
+           change();
+        }
+   </script>
+</body>
+
+</html>
