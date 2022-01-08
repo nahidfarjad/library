@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>books</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/MainStyle.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+</head>
+<style>
+
+</style>
+
+<body>
+  <script src="js/login.js"></script>
+
+  <!-- Navbar (sit on top) -->
+  <div class="top hide-small">
+    <div class="bar xlarge black opacity hover-opacity-off" id="myNavbar">
+      <a href="#" class="bar-item button"><i class="fa fa-home"></i></a>
+      <a href="#menu" class="bar-item button">لیست کتاب ها </a>
+      <a href="#about" class="bar-item button">درباره ما</a>
+      <a href="#message" class="bar-item button">ارتباط با ما</a>
+      <a href="login.html" class="bar-iteml button" id="change">ورود/ثبت نام</a>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg display-container grayscale-min" id="home">
+    <div class="display-bottomRight padding">
+      <span class="tag xlarge" style="font-family:myFont;">ساعت کاری از 8 صبح تا 14 ظهر </span>
+    </div>
+    <div class="display-middle center">
+      <span class="text-white hide-small" style="font-size:100px">به موج کتاب <br>خوش آمدید</span>
+      <p><a href="#menu" class="button xxlarge black">مشاهده کتاب ها </a></p>
+    </div>
+  </header>
+
+  <!-- Menu Container -->
+  <div class="container black padding-64 xxlarge" id="menu">
+    <div class="content">
+
+      <h1 class="center jumbo" style="margin-bottom:64px"></h1>
+      <div class="row center border border-dark-grey">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Berger');">
+          <div class="col s4 tablink padding-large hover-red">مذهبی</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Sandwich');">
+          <div class="col s4 tablink padding-large hover-red">تاریخی</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+          <div class="col s4 tablink padding-large hover-red">سیاسی</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
+          <div class="col s4 tablink padding-large hover-red">علمی</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizer');">
+          <div class="col s4 tablink padding-large hover-red">روانشناسی</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'HotDog');">
+          <div class="col s4 tablink padding-large hover-red">رمان </div>
+        </a>
+      </div>
+      <script src="js/menu.js"></script>
+
+      <div id="Drink" class="container menu padding-32 white" style="direction: rtl;">
+        <h1><b>
+بلاکچین برای کسب و کارها</b> <span class="left tag dark-grey round" style="font-family: myFont2;">54000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink1()"
+            style="cursor: pointer;">-</span><span id="drink1" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink1()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <hr>
+
+        <h1><b>
+مغز با شخصیت</b> <span class="left tag dark-grey round" style="font-family: myFont2;">67000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink2()"
+            style="cursor: pointer;">-</span><span id="drink2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <hr>
+
+        <h1><b>
+فلسفه بحران کرونا</b> <span class="left tag dark-grey round" style="font-family: myFont2;">59000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink3()"
+            style="cursor: pointer;">-</span><span id="drink3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <hr>
+
+        <h1><b>
+ماکس پلانک-آلبرت اینشتین</b> <span class="left tag dark-grey round" style="font-family: myFont2;">35000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink4()"
+            style="cursor: pointer;">-</span><span id="drink4" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink4()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <hr>
+
+        <h1><b>
+تندخوانی با نیم کره راست مغز</b> <span class="left tag dark-grey round" style="font-family: myFont2;">95700 T</span><br><br><span
+            class="left tag dark-grey round " onclick="removedrink5()" style="cursor: pointer;">-</span><span
+            id="drink5" class="left tag dark-grey round" style="margin-left: 5px;">0</span><span
+            class="left tag dark-grey round" onclick="adddrink5()" style="cursor: pointer; margin-left: 5px;">+</span>
+        </h1><br>
+        <hr>
+
+        <h1><b>
+علم خود شکوفایی</b> <span class="left tag dark-grey round" style="font-family: myFont2;">125000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink6()"
+            style="cursor: pointer;">-</span><span id="drink6" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink6()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <hr>
+
+        <h1><b>
+در ستایش راه رفتن</b><span class="left tag dark-grey round" style="font-family: myFont2;">63000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removedrink7()"
+            style="cursor: pointer;">-</span><span id="drink7" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="adddrink7()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+      </div>
+
+      <div id="Berger" class="container menu padding-32 white" style="direction: rtl">
+        <h1><b>حماسه حسینی</b> <span class="left tag dark-grey round" style="font-family: myFont2;">45500 T</span><br><br><span
+            class="left tag dark-grey round " onclick="removeham1()" style="cursor: pointer;">-</span><span id="ham1"
+            class="left tag dark-grey round" style="margin-left: 5px;">0</span><span class="left tag dark-grey round"
+            onclick="addham1()" style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">ماهیت قیام حسینی، شعار های عاشورا، امر به معروف و نهی از منکر، عنصر تبلیغ در نهضت حسینی از جمله مباحث بررسی شده در این کتاب است.
+
+</p>
+        <hr>
+
+        <h1><b>انسان ۲۵۰ ساله</b> <span class="left tag dark-grey round" style="font-family: myFont2;">45500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham2()"
+            style="cursor: pointer;">-</span><span id="ham2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1><br>
+        <p class="text-grey">این کتاب مذهبی جمع‌آوری بیانات رهبری و سخنرانی‌های ایشان در سال‌های مختلف است. عنوان کتاب اشاره به بازه‌ی زمانی سال دهم هجرت تا آغاز غیبت صغری دارد. در این بازه‌ی ۲۵۰ ساله هر کدام از معصومین با شرایط سیاسی و اجتماعی متفاوتی روبه‌رو شده و متناسب با آن اقدام کرده‌اند.</p>
+        <hr>
+
+        <h1><b>کتاب پیامبری زرتشت</b> <span class="left tag dark-grey round" style="font-family: myFont2;">126000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham3()"
+            style="cursor: pointer;">-</span><span id="ham3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">اخبار، گزاره ها و تحلیل ها از هویت زرتشت آن قدر متباین اند که از این کهن چهره، صد گمان و اسطوره پرداخته اند و وی را به ده ها رسته بسته اند. پیامبری زرتشت موضوع پرمناقشه ای است که هر گروه به گونه ای در رد یا ثبات آن، ادله و شواهدی مطرح کرده است. اگر از سویی شهرزوری و قائنی و تابعان حکمت اشراق زرتشت را می ستایند و او را نبی کامل و پیامبر حکیم می خوانند، از سویی دیگر شیخ مفید و طبری و ابوریحان و دیگران از مورخین و متکلمین فقها، او را چون یک متنبی و ناپیامبر می شناسند. در بررسی ادله و شواهد کفه ترازو به کدام طرف سنگینی می کند؟ این اثر می کوشد مدعای هریک از طرفین را ارزیابی کند و...
+</p>
+        <hr>
+
+        <h1><b>کتاب ایمان در جاده</b> <span class="left tag dark-grey round" style="font-family: myFont2;">55500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham4()"
+            style="cursor: pointer;">-</span><span id="ham4" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham4()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey"> من بیش تر اوقات خود را صرف تماشای مساجد می کردم، هرچند مرا به عنوان یک مسیحی به درون مسجد راه نمی دادند...</p>
+        <hr>
+
+        <h1><b>کتاب مذاهب در ایران</b> <span class="left tag dark-grey round" style="font-family: myFont2;">150000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham5()"
+            style="cursor: pointer;">-</span><span id="ham5" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham5()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">در کنار شیعه اثنی عشری که اکثریت جمعیت کشور را تشکیل می دهد و خود پژوهش جداگانه ای می طلبد، شافعی ها و احناف با گرایش های اعتقادی اشعری، ماتریدی و دیوبندی، صوفیانی همچون قادریه، نقشبندیه و بریلویه و دیگر جریان هایی مانند جماعت دعوت و اصلاح، مکتب القرآن، مودودیه و فرقه هایی مثل ذکریه در میان اهل سنت ایران دیده می شوند.
+نیز اسماعیلیه، شیخیه، اهل حق و طریقت های صوفی شیعه همچون شاه نعمت اللهیه، گنابادیه، ذهبیه و نوربخشیه در کنار عموم شیعیان اثنی عشری حضور دارند که در پژوهش حاضر به آنها پرداخته شده است.</p>
+        <hr>
+
+        <h1><b>کتاب خدا و عواطف</b> <span class="left tag dark-grey round" style="font-family: myFont2;">57300
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham6()"
+            style="cursor: pointer;">-</span><span id="ham6" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham6()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">کاوشی مقدماتی در مورد ماهیت عواطف و بررسی برخی از مسائل حیاتی پیرامون زندگی عاطفی خداوند در رابطه با شادی، همدلی، عشق و قضاوت های اخلاقی. با پوشش معیارهای مختلف مورد استفاده در بحث بین غیرممکن بودن و ناپذیری، خوانندگان می توانند به این فکر کنند که کدام عواطف را می توان از خدا پیش بینی کرد و کدام را نمی توان.
+</p>
+        <hr>
+
+        <h1><b>کتاب ادیان بومی آمریکا</b> <span class="left tag dark-grey round" style="font-family: myFont2;">41500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removeham7()"
+            style="cursor: pointer;">-</span><span id="ham7" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addham7()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">ادیان بومی آمریکا شامل مجموعه ای از نگرش های اساسی است که مردم را با محیط طبیعی خود مرتبط می کند. این ویرایش سوم تاریخ ادیان بومی آمریکا را از ریشه‌های آنها به عنوان ادیان قبیله‌ای از طریق تأثیرات مخرب استعمار اروپایی تا بازسازی ناگهانی آنها در قرن بیستم ارائه می‌کند.
+</p>
+        <hr>
+
+      </div>
+
+      <div id="Sandwich" class="container menu padding-32 white" style="direction: rtl">
+        <h1><b>کتاب محاکمه ی محاکمه گران</b> <span class="left tag dark-grey round" style="font-family: myFont2;">46500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removesandwich1()"
+            style="cursor: pointer;">-</span><span id="sandwich1" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addsandwich1()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">نشر اسناد تاریخی هر کشوری وظیفه کسانی است که به گذشته و آینده کشور خود دلبستگی دارند، زیرا برای شناخت تاریخ هر کشوری نیاز به اسناد موثقی است که از سر گذشت هر ملتی به جای می ماند. تا اسناد هر دوره ای بررسی و تجزیه و تحلیل دقیق نشود، نمی توان به سیر حوادث جامعه وقوف کامل یافت. آنچه در این کتاب از نظر می گذرد اسناد محاکمه ای است که به منظور محاکمه دست اندرکاران قتل سید حسن مدرس، فرخی یزدی، تقی ارانی و سردار اسعد بختیاری تشکیل شد و این خود برگی چند از تاریخ بیست ساله سلطنت رضاخان و اوایل سلطنت فرزند اوست.</p>
+        <hr>
+
+        <h1><b>کتاب رسوایی آرمانشهر</b> <span class="left tag dark-grey round" style="font-family: myFont2;">52900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removesandwich2()"
+            style="cursor: pointer;">-</span><span id="sandwich2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addsandwich2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">این روزها پیروان سوسیالیسم ناب پرشمار نیستند. این نظام سیاسی-اقتصادی که اکنون شکست خورده است، در هر کشوری ایجاد شد به بدبختی مردم آن انجامید. اتحاد جماهیر شوروی، کوبا، ونزوئلا و کره شمالی نمونه ‌های این نظام شکست‌ خورده ‌اند. چین، آخرین کشور بزرگ سوسیالیستی هم دیگر چندان سوسیالیستی نیست. در این میان، ایده ‌ای کمتر افراطی، یعنی سوسیال ‌دموکراسی همچنان باقی است. برخلاف سوسیالیسم، قرار نیست سوسیال ‌دموکراسی از طریق یک نظام اقتداگرا که در آن یک حزب قدرت را در انحصار خود می‌گیرد برقرار شود؛</p>
+        <hr>
+
+        <h1><b>کتاب سفر شهرزاد به غرب</b> <span class="left tag dark-grey round" style="font-family: myFont2;">38000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removesandwich3()"
+            style="cursor: pointer;">-</span><span id="sandwich3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addsandwich3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">فاطمه مرنیسی در کتاب سفر شهرزاد به غرب به بررسی تصویر ارائه شده از #زنان مسلمان در #فرهنگ و آداب اسلامی می‌پردازد؛ منابع فرهنگی مختلفی چون؛ داستان‌ها، فرهنگ قصه‌گویی شفاهی، نقاشی‌ها و مینیاتورهای اسلامی را بررسی می‌کند و در جست‌وجوی پاسخ به این سوال برمی‌آید که در این منابع زنان همواره نقشی پویا و فعال داشته و سرآمد زمانه و اهل فضل و دانش و ماهر در علوم گوناگون بوده‌اند، چرا همین زنان وقتی به #غرب سفر کرده‌اند و در فرهنگ و #هنر غربی بازنمایی شده‌اند، به ناگاه تصویری منفعل، بی‌حرکت و گویی اسیر پیدا کرده‌اند؟</p>
+
+      </div>
+
+
+      <div id="Pizza" class="container menu padding-32 white" style="direction: rtl">
+
+        <h1><b>راه طولانی به سوی آزادی </b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">82900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza1()" style="cursor: pointer;">-</span><span id="pizza1" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza1()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">اب راه طولانی به سوی آزادی، اثری نوشته ی نلسون ماندلا است که اولین باربرای اولین بار، داستان خارق العاده ی زندگی خود را روایت می کند: حماسه ای از تلاش، شکست، تولد دوباره ی امید و در نهایت پیروزی.
+          </p>
+        <hr>
+
+        <h1><b>کتاب نظم و زوال سیاسی</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">74900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza2()" style="cursor: pointer;">-</span><span id="pizza2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">کتاب نظم و زوال سیاسی، اثری نوشته ی فرانسیس فوکویاما است که اولین بار در سال 2015 به چاپ رسید. فوکویاما با پرداخت به این سوال مهم و حیاتی که جوامع چگونه نهادهای سیاسی قدرتمند، مبتنی بر منافع جمعی و قابل اتکا را به وجود می آورند، تحولات و فراز و نشیب های دنیای سیاست، از انقلاب فرانسه گرفته تا ماجراهای «بهار عربی»، را مورد بررسی قرار می دهد</p>
+        <hr>
+
+        <h1><b>هژمونی و استراتژی سوسیالیستی</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">69900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza3()" style="cursor: pointer;">-</span><span id="pizza3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">کتاب هژمونی و استراتژی سوسیالیستی، اثری نوشته ی ارنستو لکلائو و شانتال موفه است که اولین بار در سال 1985 انتشار یافت. این کتاب بسیار تأثیرگذار از همان بدو انتشار، باعث به وجود آمدن بحث ها و مناظرات زیادی شده و مباحث و مسائل جنجال برانگیزی که مطرح کرده، به هیچ وجه اهمیت خود را از دست نداده اند: فروپاشی بلوک شوروی، پدید آمدن هویت های اجتماعی و سیاسی جدید که با دگرگونی های کاپیتالیسم در ارتباط هستند</p>
+        <hr>
+
+        <h1><b>ریشه ها</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">156000 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza4()" style="cursor: pointer;">-</span><span id="pizza4" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza4()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">رمان ریشه ها، اثر الکس هیلی، یکی از فوق العاده ترین و تأثیرگذارترین کتاب های معاصر به حساب می آید. الکس هیلی از طریق داستان یک خانواده-خانواده ی خودش- به حکایت فراموش نشدنی و مثال زدنی شخصیتی به نام کونتا کینته و شش نسل بعد از او زندگی بخشیده است. شخصیت های زیادی در این رمان دخیل هستند: برده ها و مردمان آزاد شده، کشاورزان و آهنگران، کارگران چوب و راه آهن، وکلا و معماران و البته یک نویسنده. هیلی در رمان ریشه ها، کاری بسیار فراتر از بازگویی تاریخ خانواده ی خود کرده است.</p>
+        <hr>
+
+        <h1><b>کتاب لویاتان</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">60900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza5()" style="cursor: pointer;">-</span><span id="pizza5" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza5()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">کتاب لویاتان، اثری نوشته ی توماس هابز است که نخستین بار در سال 1651 منتشر شد. هابز بیشتر به خاطر این عقیده ی معروف خود شناخته می شود که وضعیت طبیعی انسانیت، باقی ماندن در شرایطی دائمی از جنگ است. علیرغم به چالش کشیده شدن توسط سایر فلاسفه، تئوری سکولار لویاتان درباره ی مطلق گرایی، جایگاه و توجیه پذیری خود را در طول زمان حفظ کرده است. هابز در توصیفات خود از ساختار دولت ها، مفاهیمی را به کار می برد که در جهان سیاسی امروز بسیار آشنا و پرکاربرد هستند؛</p>
+        <hr>
+
+        <h1><b>کتاب سرگذشت ندیمه</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">61900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removepizza6()" style="cursor: pointer;">-</span><span id="pizza6" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpizza6()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">آفرد، شخصیت اصلی رمان سرگذشت ندیمه و ندیمه ای در جمهوری گیلیاد است. او در طول روز اجازه دارد یک بار خانه ی فرمانده را ترک کند و پیاده به خواربارفروشی هایی برود که در تابلوهایشان به جای به کار بردن کلمات، از تصاویر استفاده شده است چرا که زنان، دیگر اجازه ی خواندن را ندارند. او مجبور است که ماهی یک بار با فرمانده همبستر شده و دعا کند که از او بچه دار شود، چرا که در دوره ی افول زاد و ولد، آفرد و سایر ندیمه های همانند او زمانی ارزش پیدا می کنند که قابلیت باروری داشته باشند. </p>
+
+      </div>
+
+      <div id="HotDog" class="container menu padding-32 white" style="direction: rtl">
+
+        <h1><b>کتاب از اصفهان تا ویرجینیا</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">45500 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removehotdog1()" style="cursor: pointer;">-</span><span id="hotdog1"
+            class="left tag dark-grey round" style="margin-left: 5px;">0</span><span class="left tag dark-grey round"
+            onclick="addhotdog1()" style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">پزشک، یک انسان است مثل سایر انسانها؛ و با تمام تعلقات مادی و معنوی، آرمانها، آرزوها و نیازها و با تمام نقاط ضعف و قوت انسانی. مردم انتظار ندارند یک پزشک خسته یا بیمار شود، اعتراض یا شکایت کند یا حتی با صدای بلند صحبت کند.
+</p>
+        <hr>
+
+        <h1><b>کتاب داستان زنان</b> <span class="left tag dark-grey round" style="font-family: myFont2;">53900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removehotdog2()"
+            style="cursor: pointer;">-</span><span id="hotdog2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addhotdog2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">از زنان نوشتن از همه چیز نوشتن است. نوشتن از زنان برخلاف ظاهرش فقط توجه به زنان نیست، بلکه نوشتن از امر انسانی است. تاریخ ما پر از صدای زنان، قصه‌های زنان و زنان بزرگ است.
+</p>
+        <hr>
+
+        <h1><b>کتاب شکار خرخروی بزرگ</b> <span class="left tag dark-grey round" style="font-family: myFont2;">40900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removehotdog3()"
+            style="cursor: pointer;">-</span><span id="hotdog3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addhotdog3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey"> روی یک تپه ی تند و شیب دار خانه ی ترسناک و عجیب و غریبی بود که همه می گفتند جناب خرخرو آنجا زندگی می کند. در یک شب مهتابی، موش، گربه و سگ تصمیم گرفتند به شکار خرخروی بزرگ بروند. آیا تو جرئتش را داری که با آن ها بروی؟ و...
+</p>
+        <hr>
+
+        <h1><b>کتاب دوشیزه و کلاغ</b> <span class="left tag dark-grey round"
+            style="font-family: myFont2;">52900 T</span><br><br><span class="left tag dark-grey round "
+            onclick="removehotdog4()" style="cursor: pointer;">-</span><span id="hotdog4"
+            class="left tag dark-grey round" style="margin-left: 5px;">0</span><span class="left tag dark-grey round"
+            onclick="addhotdog4()" style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey"> بوی گیلاس می داد. وقتی می رفت بالای درخت جلوی خانه و از آنجا حیاط ما را دید می زد، می دیدمش که با لباس قرمز و موهای کوتاه سیاه، مرا که توی باغچه ی باباجانم بیل می زدم، می پاید. اولش باور نمی کردم که برای من آمده باشد اما وقتی یک روز با دوچرخه شیر می بردم برای مغازه ی آقا جانش، هسته ی گیلاس را شوت کرد توی سر تراشیده ام. 
+</p>
+        <hr>
+
+        <h1><b>کتاب ویکی و تاریکی</b> <span class="left tag dark-grey round" style="font-family: myFont2;">45500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removehotdog5()"
+            style="cursor: pointer;">-</span><span id="hotdog5" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addhotdog5()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">در سفر شبانه ی ویکی با او همراه شو تا با بزرگ ترین ترسش روبه‌رو شود و بفهمد که تاریکی چقدر مهربان و دوست داشتنی است و...
+</p>
+        <hr>
+
+        <h1><b>کتاب دنیا به آدم های بنفش بیشتری نیاز دارد!</b> <span class="left tag dark-grey round" style="font-family: myFont2;">56900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removehotdog6()"
+            style="cursor: pointer;">-</span><span id="hotdog6" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addhotdog6()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">آدم بنفش‌ها کسایی هستند که همیشه سوال‌های خیلی خوب می‌پرسند.
+</p>
+
+      </div>
+
+      <div id="Appetizer" class="container menu padding-32 white" style="direction: rtl">
+
+        <h1><b>کتاب معجزه</b> <span class="left tag dark-grey round" style="font-family: myFont2;">78900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish1()"
+            style="cursor: pointer;">-</span><span id="pish1" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish1()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">جو ویتالی در کتاب معجزه به ما کمک می کند تا علت نهان در پس باورهای نا‌خود‌آگاهمان را کشف کنیم و سپس نشان می‌دهد که با را‌هکارها، مراقبه‌ها و تمرینات آن‌ها را تغییر دهیم. او کمک می‌کند تا هر روز معجزات را خلق و با آن‌ها زندگی کنیم.
+</p>
+        <hr>
+
+        <h1><b>کتاب پیروزی در نبرد فروش</b> <span class="left tag dark-grey round" style="font-family: myFont2;">37900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish2()"
+            style="cursor: pointer;">-</span><span id="pish2" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish2()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">مسلما فروش یکی از قدیمی‌ترین حرفه‌ها به شمار می‌رود. از زمان‌های دیرین فروش به عنوان هسته مرکزی اقتصاد بشر شناخته شده است. مردم از همان ابتدای تعاملات انسانی به خرید و فروش کالا و خدمات روی آوردند.
+در واقع، احتمالا برای اولین بار نوشتن به این خاطر اختراخ شد که فروش کالا و اموال را ثبت کند. سنگ نگاره‌ها نشان می‌دهند که قدیمی‌ترین نوشتار با خط میخی سومری و خط تصویری مصری بوده است؛ قدیمی‌ترین تاریخ به ۲۶۰۰ سال قبل از میلاد، یعنی اوایل عهد برنز برمی‌گردد.</p>
+        <hr>
+
+        <h1><b>کتاب رموز جذاب زندگی</b> <span class="left tag dark-grey round" style="font-family: myFont2;">22500
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish3()"
+            style="cursor: pointer;">-</span><span id="pish3" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish3()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">گرفتار شدن در میان چالش‌ها و موقعیت‌های منفی جهان، امری ناگزیر است. داشتن احساس آرامش، خشنودی و شادی به معنای جدا ماندن از چالش‌های زندگی نیست؛ بلکه ریشۀ رسیدن به آرامش، نحوۀ مسیریابی از میان چالش‌های زندگی برای رسیدن به زندگی دلخواه است.
+</p>
+        <hr>
+
+        <h1><b>کتاب تو هم می توانی موفق شوی</b> <span class="left tag dark-grey round" style="font-family: myFont2;">33900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish4()"
+            style="cursor: pointer;">-</span><span id="pish4" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish4()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">کتاب پیش رو اثری است از یک فروشنده حرفه‌ای بیمه عمر، بانوی توانمند و پرتلاشی که کار فروش را از ابتدایی‌ترین سطح آن آغاز کرده است و با شور و شوق پله‌ها را یکی پس از دیگری پشت سر گذاشت تا درنهایت به سمت مدیر توسعه در سازمان فروش5030 بیمه پاسارگاد (ساحل آرامش الماس خزر) نائل شد.</p>
+        <hr>
+
+        <h1><b>کتاب بدون ترس سخنرانی کن</b> <span class="left tag dark-grey round" style="font-family: myFont2">115000
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish5()"
+            style="cursor: pointer;">-</span><span id="pish5" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish5()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">آیا می خواهید در ارتباطات خود و فراتر از آن اعتماد به نفس کسب کنید؟
+این کتاب می تواند به شما کمک کند. دیگر لازم نیست بترسید. لازم نیست اجازه دهید اضطراب ارتباطی شما را از اهدافتان دور کند. در حالی که کتاب آینده من استراتژی های پیشرفته ای را ارائه می دهد.</p>
+        <hr>
+
+        <h1><b>کتاب همسر مناسب شما کیست؟</b> <span class="left tag dark-grey round" style="font-family: myFont2">44900
+            T</span><br><br><span class="left tag dark-grey round " onclick="removepish6()"
+            style="cursor: pointer;">-</span><span id="pish6" class="left tag dark-grey round"
+            style="margin-left: 5px;">0</span><span class="left tag dark-grey round" onclick="addpish6()"
+            style="cursor: pointer; margin-left: 5px;">+</span></h1>
+        <p class="text-grey">اگر در موقعیتی میان عذاب از گذشته و آینده پر از سعادت قرار گرفته اید این کتاب برای شما نوشته شده است. مهم نیست که چند سال دارید ، اگر مجرد هستید- برای اولین بار یا چندمین بار – این کتاب برای شما نوشته شده است. به طور کلی،‌ حرکتمان را از این حقیقت تلخ و شیرین شروع می‌کنیم که مرد نامناسب، انتخاب خوبی برای ازدواج نیست و بعد راه‌مان را به سمت آینده با شکوه شما ادامه می‌دهیم. آینده‌ای که در آن با زندگی در کنار همسری مناسب به تقدیر دلخواهتان خواهید رسید.</p>
+
+      </div><br>
+
+    </div>
+  </div>
+
+  <!-- show total -->
+  <div class="container padding-64 grey grayscale xlarge" style="direction: rtl;">
+    <div class="content ">
+      <span style="margin-bottom:64px;font-size: 50px;">مجموع سبد خرید شما :</span>
+      <span id="total" style="margin-bottom:64px; font-size: 50px;"></span>
+      <span class="left"><a href="#" class="button xxlarge black" onclick="zero()">پرداخت</a></span>
+
+
+    </div>
+  </div>
+  <!-- About Container -->
+  <div class="container padding-64 red grayscale xlarge" id="about" style="direction: rtl">
+    <div class="content">
+      <h1 class="center jumbo" style="margin-bottom:64px">درباره ما</h1>
+      <p>. برای خرید انواع محتلف کتاب ایرانی و خارجی است ، که این سایت محبوب کتابخوان هاست </p>
+      <h1><b>ساعات کاری</b></h1>
+
+      <div class="row">
+        <div class="col s6">
+          <p>چهارشنبه 10.00 - 24.00</p>
+          <p>پنج شنبه 10.00 - 24.00</p>
+          <p>جمعه 10:00 - 24:00</p>
+        </div>
+        <div class="col s6">
+          <p>شنبه 10.00 - 22.00</p>
+          <p>یک شنبه 10.00 - 22.00</p>
+          <p>دو شنبه 10.00 - 22.00</p>
+          <p>سه شنبه 10.00 - 22.00</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Contact -->
+  <div class="container padding-64 blue-grey grayscale-min xlarge" id="message" style="direction: rtl">
+    <div class="content">
+      <h1 class="center jumbo" style="margin-bottom:64px">ارتباط با ما</h1>
+      <p>شماره تماس با ما : 09138099195</p>
+      <p><input class="input padding-16 border" type="text" placeholder="نام" required name="Name"></p>
+      <textarea class="input padding-16 border" style="height: 180px; resize: none" placeholder="متن پیام "></textarea>
+      <p><button class="button light-grey block" type="submit" onclick="showSend()">SEND MESSAGE</button></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="center black padding-48 xxlarge">
+    <p>&copy;Nahid Farjad and Atefe Usefi</p>
+  </footer>
+
+  <script>
+    function showSend() {
+      alert("پیام شما ارسال شد");
+    }
+    document.getElementById("myLink").click();
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" red", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " red";
+    }
+    document.getElementById("myLink").click();
+  </script>
+
+</body>
+
+</html>
